@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta newpame="viort" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">BBDD Solutions Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to answer this questions</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">
+          Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="">
+          Email
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">
+          Age
+          <input id="number" type="number" min="12" max="99" placeholder="Enter your age" />
+        </label>
+        <label>
+          Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        Do you like coding?
+        <label for="definitely">
+          <input class="inline" type="radio" id="definitely" name="recommend" value="definitely" />
+          Definetely
+        </label>
+        <label for="maybe">
+          <input class="inline" type="radio" id="maybe" name="recommend" value="maybe" />
+          Maybe
+        </label>
+        <label>
+          <input class="inline" type="radio" id="not-sure" name="recommend" value="not-sure" />
+          Not sure
+        </label>
+      </fieldset>
+
+      <fieldset>
+        What is your favorite programing language?
+        <label> <input class="inline" type="checkbox" value="javascript" /> JavaScript </label>
+        <label> <input class="inline" type="checkbox" value="python" /> Python </label>
+        <label> <input class="inline" type="checkbox" value="c++" /> C++ </label>
+        <label> <input class="inline" type="checkbox" value="other" /> Other </label>
+      </fieldset>
+
+      <fieldset>
+        Any comments or suggestions?
+        <textarea cols="3" rows="3"></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit Form" />
+    </form>
+  </body>
+</html>
