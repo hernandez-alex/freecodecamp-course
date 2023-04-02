@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 25px;
+}
+
+.main-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  background-color: aqua;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  min-height: 120px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+  width: 65%;
+}
+
+#nav-bar {
+  width: 35%;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2rem;
+}
+
+#email,
+#submit {
+  width: 35%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#submit {
+  font-size: 1.2rem;
+  background-color: #ff9c0d;
+  border-radius: 5px;
+  border-color: #db2323;
+  margin-bottom: 20px;
+}
+
+.destiny {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.img-destiny {
+  padding: 0 25px;
+  border-radius: 50px;
+}
+
+.about-destiny p {
+  padding-right: 25px;
+  text-align: justify;
+}
+
+#videos {
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#pricing {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #000;
+  width: 30%;
+  height: 250px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  place-content: center;
+}
+
+.card-title {
+  background-color: #ff9c0d;
+  padding: 20px;
+}
+.card-price {
+  font-size: 3rem;
+  padding: 20px;
+}
+.card-comment {
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+  }
+  .card-title {
+    padding: 10px;
+  }
+  .card-price {
+    padding: 10px;
+  }
+  .card-comment {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Landing Page</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://img.freepik.com/vector-gratis/icono-texto-viaje-carretera-sobre-fondo-blanco_1308-95254.jpg?w=1800&t=st=1680362654~exp=1680363254~hmac=9d213e61c455f3369f81de99a6b8800f49c2461061c636cb9b4df4450b96a122"
+            width="300"
+            alt="logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#destination">Link one</a></li>
+            <li><a class="nav-link" href="#videos">Link two</a></li>
+            <li><a class="nav-link" href="#pricing">Link three</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="hero">
+        <h1 class="hero-title">Travel Around The World</h1>
+        <br />
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email address"
+            />
+          </label>
+          <br /><br />
+          <input id="submit" type="submit" value="CONTACT ME" />
+        </form>
+      </section>
+
+      <section id="destination">
+        <section class="destiny">
+          <img class="img-destiny" src="https://picsum.photos/id/598/150/150" alt="Beach" />
+          <div class="about-destiny">
+            <h2>Beach</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, inventore ipsam
+              tenetur alias et at incidunt magni rerum earum facere dolorem placeat, quam dolorum
+              error obcaecati magnam nemo ipsa reprehenderit.
+            </p>
+          </div>
+        </section>
+        <section class="destiny">
+          <img class="img-destiny" src="https://picsum.photos/id/231/150/150" alt="Mountain" />
+          <div class="about-destiny">
+            <h2>Mountain</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quia voluptatem
+              praesentium earum nam recusandae architecto, est fugiat nulla eaque animi odio quaerat
+              possimus ipsam beatae illum minima aliquid quibusdam.
+            </p>
+          </div>
+        </section>
+        <section class="destiny">
+          <img class="img-destiny" src="https://picsum.photos/id/1067/150/150" alt="" />
+          <div class="about-destiny">
+            <h2>City</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia beatae odit
+              eaque sunt repudiandae. Autem nihil exercitationem voluptas, aut minima obcaecati ut
+              ad molestiae esse? Fugit dignissimos totam laudantium.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="videos">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/BapSQFJPMM0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="card">
+          <h2 class="card-title">Beach</h2>
+          <p class="card-price">$205</p>
+          <p class="card-comment">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quae.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Mountain</h2>
+          <p class="card-price">$205</p>
+          <p class="card-comment">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quae.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">city</h2>
+          <p class="card-price">$205</p>
+          <p class="card-comment">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quae.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
